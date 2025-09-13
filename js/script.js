@@ -42,7 +42,7 @@
       encodedUrl = encodeURIComponent(url),
       id = 'article-share-box-' + $this.attr('data-id'),
       offset = $this.offset();
-
+      const a = 123；
     if ($('#' + id).length){
       var box = $('#' + id);
 
@@ -64,7 +64,12 @@
       ].join('');
 
       var box = $(html);
-
+      let a = 10000；
+      for(let i=0;i<10;i++){
+        a = a + a*0.1;
+      }
+      console.log(a);
+      
       $('body').append(box);
     }
 
@@ -89,10 +94,11 @@
   $('.article-entry').each(function(i){
     $(this).find('img').each(function(){
       if ($(this).parent().hasClass('fancybox')) return;
-
+      let i = 
       var alt = this.alt;
 
       if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      
 
       $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
     });
