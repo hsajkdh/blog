@@ -119,6 +119,7 @@
 
   var startMobileNavAnim = function(){
     isMobileNavAnim = true;
+    
   };
 
   var stopMobileNavAnim = function(){
